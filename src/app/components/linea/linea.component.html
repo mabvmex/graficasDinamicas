@@ -16,11 +16,12 @@
         <td *ngFor="let label of lineChartLabels; let j=index">{{d && d.data[j]}}</td>
       </tr>
     </table>
+    
+      <button class="btn btn-primary" style="margin: 5px;" mat-button mat-raised-button color="primary" (click)="randomize()">Randomize</button>
+      <button class="btn btn-primary" style="margin: 5px;" mat-button mat-raised-button color="primary" (click)="pushOne()">Push</button>
+      <button class="btn btn-primary" style="margin: 5px;" mat-button mat-raised-button color="primary" (click)="changeColor()">Recolor</button>
+      <button class="btn btn-primary" style="margin: 5px;" mat-button mat-raised-button color="primary" (click)="hideOne()">Toggle Series B</button>
+      <button class="btn btn-primary" style="margin: 5px;" mat-button mat-raised-button color="primary" (click)="changeLabel()">Change Label</button>
 
-    <button class="btn btn-primary" style="margin: 5px;" mat-button mat-raised-button color="primary" (click)="randomize()">Randomize</button>
-    <button class="btn btn-primary" style="margin: 5px;" mat-button mat-raised-button color="primary" (click)="pushOne()">Push</button>
-    <button class="btn btn-primary" style="margin: 5px;" mat-button mat-raised-button color="primary" (click)="changeColor()">Recolor</button>
-    <button class="btn btn-primary" style="margin: 5px;" mat-button mat-raised-button color="primary" (click)="hideOne()">Toggle Series B</button>
-    <button class="btn btn-primary" style="margin: 5px;" mat-button mat-raised-button color="primary" (click)="changeLabel()">Change Label</button>
   </div>
 </div>
